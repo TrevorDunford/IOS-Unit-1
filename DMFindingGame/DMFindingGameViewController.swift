@@ -18,7 +18,9 @@ class DMFindingGameViewController: UIViewController {
     @IBOutlet var lettersbutton: [UIButton]!
     
     @IBAction func letterbutton(_ sender: Any) {
-    }
+        
+        }
+    
     /**
      2.1 Create IBOutlets for the target letter label and the score label.
      2.2 Create an IBOutlet collection for the letter buttons.     */
@@ -29,7 +31,7 @@ class DMFindingGameViewController: UIViewController {
     var randomLetters = [String]()
     var score = 0
     let letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-    
+    let numLetters = 11
     /**
      We're starting a new round as soon as the screen loads. You do not need to modify this code.
      */
@@ -45,25 +47,44 @@ class DMFindingGameViewController: UIViewController {
      */
     func newRound() {
         targetLetter = letters.randomElement()!
-        
+        updateScoreLabel()
+        updateTargetLetterLabel()
+        updatebutton()
+        randomLetters = generateRandomLetters(numLetters: lettersbutton.count)
     }
-    func generateRandomLetters() {
-        randomLetters = generateRandomLetters(numLetters: 12)
+    
         
+    func updateTargetLetterLabel() {
+        targetletter.text = "\(targetLetter)"
     }
-    func updateTargetLetterLabel() {}
-    func updateLetterButtons() {}
+    
     /**
      4.1 Return an array of letters. There should be as many letters as `numLetters`.
      The array should include the target letter. The rest of the letters should be random. A letter should show up in the array only once. The order of the letters should be random.
      
      This is a tricky function, but feel free to run the provided test in `DMFindingGameTests` to know if your code is correct. Let your Tech Lead know if you need help. :)
      */
-    func generateRandomLetters(numLetters: Int) -> [String] {
-        return ["T, A ,W, U, P, B, L, K, J, M, B, V, F, C, X, H"]
+    var randomArray: [String] = ["T"]
+    func generateRandomLetters(numLetters: Int) ->[String:[randomArray]]{
+        for _ in 0..<numLetters {
+                var randomLetter: String
+                repeat {
+                    let randomIndex = Int.random(in: 0..<numLetters)
+                    randomLetter = letters[letters.index(letters.startIndex, offsetBy: randomIndex)]
+                } while randomArray.contains(randomLetter)
+
+                randomArray.append(randomLetter)
+            }
+
+        
         
     
     }
+    //1. create an empty array -
+    // put the target letter in the array manually
+    //2. create a for loop that runs numLetters times
+    //3. each time the loops runs, generating random letter and putting it into array, making sure there is no repeats of any letter. Use While loops in the for loops
+    //4. return the array
     
     /**
      5.1 Check if the `selectedLetter` is equal to the `targetLetter` and update the `score` variable accordingly.
@@ -73,8 +94,6 @@ class DMFindingGameViewController: UIViewController {
         if
             selectedLetter == targetLetter
         { score += 1}
-        calculateNewScore(selectedLetter: targetLetter)
-        newRound()
     }
     /**
      6.1 Create an IBAction that gets run when the user taps on a letter button.
