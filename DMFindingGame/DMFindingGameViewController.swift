@@ -31,7 +31,7 @@ class DMFindingGameViewController: UIViewController {
     var randomLetters = [String]()
     var score = 0
     let letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-    let numLetters = 11
+    
     /**
      We're starting a new round as soon as the screen loads. You do not need to modify this code.
      */
@@ -47,10 +47,11 @@ class DMFindingGameViewController: UIViewController {
      */
     func newRound() {
         targetLetter = letters.randomElement()!
+        randomLetters = generateRandomLetters(numLetters: lettersbutton.count)
         updateScoreLabel()
         updateTargetLetterLabel()
-        updatebutton()
-        randomLetters = generateRandomLetters(numLetters: lettersbutton.count)
+        updateLetterbuttons()
+        
     }
     
         
@@ -64,21 +65,20 @@ class DMFindingGameViewController: UIViewController {
      
      This is a tricky function, but feel free to run the provided test in `DMFindingGameTests` to know if your code is correct. Let your Tech Lead know if you need help. :)
      */
-    var randomArray: [String] = ["T"]
-    func generateRandomLetters(numLetters: Int) ->[String:[randomArray]]{
-        for _ in 0..<numLetters {
-                var randomLetter: String
-                repeat {
-                    let randomIndex = Int.random(in: 0..<numLetters)
-                    randomLetter = letters[letters.index(letters.startIndex, offsetBy: randomIndex)]
-                } while randomArray.contains(randomLetter)
-
-                randomArray.append(randomLetter)
-            }
-
-        
-        
     
+    func generateRandomLetters(numLetters: Int) -> [String] {
+        var randomArray: [String] = [targetLetter]
+        for _ in 1..<numLetters {
+            var randomLetter: String
+            repeat {
+                randomLetter = letters.randomElement()!
+
+            } while randomArray.contains(randomLetter)
+
+            randomArray.append(randomLetter)
+        }
+        print(randomArray)
+        return randomArray
     }
     //1. create an empty array -
     // put the target letter in the array manually
@@ -118,7 +118,8 @@ class DMFindingGameViewController: UIViewController {
      9.1 Update the title of each button in the IBOutlet collection to be the random letter at the corresponding index in the `randomLetters` array.
      Hint: `UIButton`s have a `setTitle` function.
      */
-    func updatebutton() {
+    func updateLetterbuttons() {
+        print (randomLetters)
         for (index, button) in lettersbutton.enumerated(){
             button.setTitle(randomLetters[index], for: .normal)
         }
