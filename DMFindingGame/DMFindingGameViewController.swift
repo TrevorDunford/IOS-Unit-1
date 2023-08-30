@@ -77,7 +77,7 @@ class DMFindingGameViewController: UIViewController {
 
             randomArray.append(randomLetter)
         }
-        print(randomArray)
+        
         return randomArray
     }
     //1. create an empty array -
