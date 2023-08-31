@@ -29,6 +29,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Y"/>
+                                        <connections>
+                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Ms5-gk-r7R"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ5-Hi-n1a">
                                         <rect key="frame" x="93" y="0.0" width="51" height="81"/>
@@ -39,6 +42,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="G"/>
+                                        <connections>
+                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="4LD-Mx-IRq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQG-pQ-6Gb">
                                         <rect key="frame" x="186" y="0.0" width="51" height="81"/>
@@ -49,6 +55,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="N"/>
+                                        <connections>
+                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="7A6-cP-9Jd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2U-MN-yUB">
                                         <rect key="frame" x="279" y="0.0" width="51" height="81"/>
@@ -59,6 +68,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="K"/>
+                                        <connections>
+                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="O47-MA-YAk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="CQ4-gQ-DVA"/>
@@ -88,6 +100,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="E"/>
+                                        <connections>
+                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Oo9-1h-xYQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjB-tb-wbp">
                                         <rect key="frame" x="186" y="0.0" width="51" height="85"/>
@@ -98,6 +113,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="L"/>
+                                        <connections>
+                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Q6G-dK-Rdw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMm-Vm-qon">
                                         <rect key="frame" x="279" y="0.0" width="51" height="85"/>
@@ -108,6 +126,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="B"/>
+                                        <connections>
+                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="5cT-fO-3Qh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -151,6 +172,9 @@
                                                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                                             </backgroundConfiguration>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="hXZ-VN-3LO"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-K1-EtZ">
                                                         <rect key="frame" x="93" y="0.0" width="51" height="81"/>
@@ -161,6 +185,9 @@
                                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="P"/>
+                                                        <connections>
+                                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="SvK-kL-ftF"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTZ-LU-f60">
                                                         <rect key="frame" x="186" y="0.0" width="51" height="81"/>
@@ -171,6 +198,9 @@
                                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="T"/>
+                                                        <connections>
+                                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Z9l-h3-tnL"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roZ-lr-GOr">
                                                         <rect key="frame" x="279" y="0.0" width="51" height="81"/>
@@ -181,6 +211,9 @@
                                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="S"/>
+                                                        <connections>
+                                                            <action selector="letterbutton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="ui7-mE-2RD"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -193,20 +226,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5pm-T8-d5B">
-                                <rect key="frame" x="171" y="89" width="51" height="100.33333333333331"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5pm-T8-d5B">
+                                <rect key="frame" x="172" y="89" width="49" height="100.33333333333331"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPk-kf-K2I">
-                                        <rect key="frame" x="0.0" y="0.0" width="51" height="100.33333333333333"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="84"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="100.33333333333333"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <viewLayoutGuide key="safeArea" id="CFf-zU-247"/>
                                 <constraints>
                                     <constraint firstItem="WPk-kf-K2I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5pm-T8-d5B" secondAttribute="leading" id="DXX-YG-7zc"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WPk-kf-K2I" secondAttribute="trailing" id="MIa-JE-b8I"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WPk-kf-K2I" secondAttribute="trailing" id="Nvu-4x-nWd"/>
+                                    <constraint firstItem="CFf-zU-247" firstAttribute="trailing" secondItem="WPk-kf-K2I" secondAttribute="trailing" id="MIa-JE-b8I"/>
+                                    <constraint firstAttribute="trailing" secondItem="WPk-kf-K2I" secondAttribute="trailing" id="Nvu-4x-nWd"/>
                                     <constraint firstItem="WPk-kf-K2I" firstAttribute="top" secondItem="5pm-T8-d5B" secondAttribute="top" id="QdO-td-Ab9"/>
                                     <constraint firstItem="WPk-kf-K2I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5pm-T8-d5B" secondAttribute="leading" id="lkO-PV-iQ2"/>
                                     <constraint firstAttribute="bottom" secondItem="WPk-kf-K2I" secondAttribute="bottom" id="nvy-uA-AIb"/>
@@ -224,11 +258,12 @@
                             <constraint firstItem="H8z-PH-Fq4" firstAttribute="top" secondItem="h97-ZV-Wr4" secondAttribute="bottom" constant="47" id="FA1-Wk-7vB"/>
                             <constraint firstItem="8bc-M0-il6" firstAttribute="bottom" secondItem="TWd-ez-44Y" secondAttribute="bottom" constant="265" id="IFR-Wr-7LV"/>
                             <constraint firstItem="8bc-M0-il6" firstAttribute="trailing" secondItem="roZ-lr-GOr" secondAttribute="trailing" constant="37" id="LS1-kY-KpL"/>
+                            <constraint firstItem="WPk-kf-K2I" firstAttribute="leading" secondItem="8bc-M0-il6" secondAttribute="leading" constant="172" id="MGf-4q-JNx"/>
                             <constraint firstItem="5pm-T8-d5B" firstAttribute="top" secondItem="8bc-M0-il6" secondAttribute="top" constant="30" id="PkV-ZT-Tex"/>
                             <constraint firstItem="TWd-ez-44Y" firstAttribute="top" secondItem="H8z-PH-Fq4" secondAttribute="bottom" constant="43" id="aa3-Sd-lfv"/>
                             <constraint firstItem="8bc-M0-il6" firstAttribute="trailing" secondItem="wVn-7y-J8r" secondAttribute="trailing" constant="43.666666666666686" id="fnc-y1-ENH"/>
-                            <constraint firstItem="WPk-kf-K2I" firstAttribute="leading" secondItem="8bc-M0-il6" secondAttribute="leading" constant="171" id="kIy-1S-nVU"/>
                             <constraint firstItem="oRq-xv-s8A" firstAttribute="top" secondItem="8bc-M0-il6" secondAttribute="top" constant="157" id="n9d-AL-6hU"/>
+                            <constraint firstItem="8bc-M0-il6" firstAttribute="trailing" secondItem="WPk-kf-K2I" secondAttribute="trailing" constant="172" id="o4z-61-jb7"/>
                             <constraint firstItem="h97-ZV-Wr4" firstAttribute="top" secondItem="5pm-T8-d5B" secondAttribute="bottom" constant="26.666666666666686" id="phA-HT-ZqZ"/>
                             <constraint firstItem="WPk-kf-K2I" firstAttribute="centerX" secondItem="8bc-M0-il6" secondAttribute="centerX" id="wkn-Wm-TRz"/>
                         </constraints>

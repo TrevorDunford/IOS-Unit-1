@@ -17,8 +17,10 @@ class DMFindingGameViewController: UIViewController {
     
     @IBOutlet var lettersbutton: [UIButton]!
     
-    @IBAction func letterbutton(_ sender: Any) {
-        
+    @IBAction func letterbutton(_ sender: UIButton) {
+        calculateNewScore(selectedLetter: sender.titleLabel?.text ?? "")
+        updateScoreLabel()
+        newRound()
         }
     
     /**
@@ -45,14 +47,7 @@ class DMFindingGameViewController: UIViewController {
      3.2 Call the `generateRandomLetters` function and assign the result to the `randomLetters` variable. Hint: We want the number of letters to be the number of letters buttons that we have.
      3.3 Call the `updateTargetLetterLabel` and `updateLetterButtons` functions.
      */
-    func newRound() {
-        targetLetter = letters.randomElement()!
-        randomLetters = generateRandomLetters(numLetters: lettersbutton.count)
-        updateScoreLabel()
-        updateTargetLetterLabel()
-        updateLetterbuttons()
-        
-    }
+   
     
         
     func updateTargetLetterLabel() {
@@ -72,12 +67,12 @@ class DMFindingGameViewController: UIViewController {
             var randomLetter: String
             repeat {
                 randomLetter = letters.randomElement()!
-
+                
             } while randomArray.contains(randomLetter)
 
             randomArray.append(randomLetter)
         }
-        
+        randomArray.shuffle()
         return randomArray
     }
     //1. create an empty array -
@@ -100,8 +95,15 @@ class DMFindingGameViewController: UIViewController {
      6.2 Call the `calculateNewScore` function and pass in the selected letter. Hint: You can get access to the selected letter using the `sender`'s `titleLabel`.
      6.3 Call the `newRound` function to start a new round.
      */
-    
-    /**
+    func newRound() {
+        targetLetter = letters.randomElement()!
+        randomLetters = generateRandomLetters(numLetters: lettersbutton.count)
+        updateScoreLabel()
+        updateTargetLetterLabel()
+        updateLetterbuttons()
+        
+        
+    }    /**
      7.1 Update the `targetLetterLabel`'s text to be the `targetLetter`.
      */
     
